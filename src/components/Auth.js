@@ -13,7 +13,8 @@ const Auth = () => {
     <div>
         
         <h1>Click on the checkbox to get authenticated </h1>
-         <p>{ !auth ?" You are not authenticated": " You are now authenticated , you can procced " }</p>
+         <p className="authText">{ auth ?  "you are authenticated,you can prceed"
+          : "you are not authenticated"}</p>
 
          <form>
                <label> 
