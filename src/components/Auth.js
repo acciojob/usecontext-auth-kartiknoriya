@@ -13,11 +13,11 @@ const Auth = () => {
     <div>
         
         <h1>Click on the checkbox to get authenticated </h1>
-         <h3>{ !auth ?" You are not authenticated": " You are now authenticated , you can procced " }</h3>
+         <p>{ !auth ?" You are not authenticated": " You are now authenticated , you can procced " }</p>
 
          <form>
                <label> 
-                <input onChange={Handleclick} type="checkbox" checked = {auth}  />
+                <input id='authText' onChange={Handleclick} type="checkbox" checked = {auth}  />
                  I'm not a robot
              </label>
               
